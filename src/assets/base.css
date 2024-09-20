@@ -1,0 +1,107 @@
+当然，可以为你提供一个基本的项目初始化 CSS 文件。这个文件通常被称为“normalize”或“reset”样式表，用于消除不同浏览器的默认样式差异，并提供一些基础样式设置。以下是一个简单的例子：
+
+css
+/* 项目初始化 CSS */  
+  
+/* Reset一些基本元素 */  
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+    margin: 0;  
+    padding: 0;  
+    border: 0;  
+    font-size: 100%;  
+    font: inherit;  
+    vertical-align: baseline;  
+}  
+  
+/* 设置HTML5元素的display属性 */  
+article, aside, details, figcaption, figure,  
+footer, header, hgroup, menu, nav, section {  
+    display: block;  
+}  
+  
+body {  
+    line-height: 1;  
+}  
+  
+/* 列表样式 */  
+ol, ul {  
+    list-style: none;  
+}  
+  
+/* 块引用 */  
+blockquote, q {  
+    quotes: none;  
+}  
+  
+blockquote:before, blockquote:after,  
+q:before, q:after {  
+    content: '';  
+    content: none;  
+}  
+  
+/* 表格样式 */  
+table {  
+    border-collapse: collapse;  
+    border-spacing: 0;  
+}  
+  
+/* 继承盒模型 */  
+*,  
+*::before,  
+*::after {  
+    box-sizing: inherit;  
+}  
+  
+html {  
+    box-sizing: border-box;  
+}  
+  
+/* 设置body基础样式 */  
+body {  
+    font-family: Arial, sans-serif; /* 根据项目需求调整字体 */  
+    font-size: 16px; /* 基础字体大小 */  
+    line-height: 1.5; /* 行高 */  
+    color: #333; /* 基础字体颜色 */  
+    background-color: #fff; /* 背景颜色 */  
+    padding: 20px; /* 内边距 */  
+    margin: 0; /* 外边距 */  
+}  
+  
+/* 标题样式 */  
+h1, h2, h3, h4, h5, h6 {  
+    font-weight: normal; /* 标题字重 */  
+    margin-bottom: 20px; /* 标题间距 */  
+    color: #222; /* 标题颜色 */  
+}  
+  
+/* 链接样式 */  
+a {  
+    color: #007BFF; /* 链接颜色 */  
+    text-decoration: none; /* 去掉下划线 */  
+    transition: color 0.3s ease; /* 过渡效果 */  
+}  
+  
+a:hover {  
+    color: #0056b3; /* 悬停颜色 */  
+}  
+  
+/* 图片样式 */  
+img {  
+    max-width: 100%; /* 图片自适应 */  
+    height: auto; /* 图片按比例缩放 */  
+    display: block; /* 清除图片底部间隙 */  
+}  
+  
+
