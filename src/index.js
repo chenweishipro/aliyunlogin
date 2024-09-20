@@ -1,10 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './App'
+
+import AppRouter from './router/AppRouter'
+import './assets/css/base.css'
 
 
 ReactDOM.render(
-  <App />,
+  <AppRouter />,
   document.getElementById('root')
 
 )
