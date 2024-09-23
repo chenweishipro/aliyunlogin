@@ -1,10 +1,11 @@
 import React from 'react'
+import Header from '../components/Header/Header'
 
 export default function Layout(props) {
   return (
     (
       <div>
-        <h2>头部</h2>
+       <Header/>
   
         {/* 路由出口 */}
         <div>
