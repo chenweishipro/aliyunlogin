@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './SignUpForm.less'
+import api from '../../../api';
 
 export default function SignUpForm() {
 
@@ -14,6 +15,11 @@ function onSubmit(e) {
   // 提交表单，获取元素，发送后台
   e.preventDefault();
   console.log(username, email, password,  confirmPwd);
+  api.toRegister({
+    username,
+    email,
+    password,
+    confirmPwd}).then(res=>{console.log(res.data);})
 }
 
   return (
